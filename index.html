@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OneNote</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-field col s12">
+        <select id="severity">
+          <option value=""></option>
+          <option value="1 - Major">1 - Major</option>
+          <option value="2 - Significant">2 - Significant</option>
+          <option value="3 - Minor">3 - Minor</option>
+        </select>
+        <label>Severity</label>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea
+                id="description"
+                class="materialize-textarea"
+              ></textarea>
+              <label for="description">Detailed Description</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="input-field col s12">
+        <select id="clients" multiple>
+          <option value="" disabled>Choose your option</option>
+          <option value="Ryder">Ryder</option>
+          <option value="Aetna">Aetna</option>
+          <option value="Hotwire">Hotwire</option>
+        </select>
+        <label>Client(s) Impacted</label>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
